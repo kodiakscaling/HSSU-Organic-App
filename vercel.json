@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/start",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/",
