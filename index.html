@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Call Confirmed — Home Service Scaling University</title>
+  <title>Application Submitted — Home Service Scaling University</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -58,26 +58,17 @@
       text-transform: uppercase;
     }
 
-    /* ── Hero headline ── */
+    /* ── Hero ── */
     .hero {
       text-align: center;
       padding: 2.5rem 0 2rem;
     }
 
-    .congrats-word {
-      font-size: clamp(2rem, 5vw, 3.2rem);
+    .hero-headline {
+      font-size: clamp(1.8rem, 4.5vw, 3rem);
       font-weight: 900;
-      line-height: 1.15;
+      line-height: 1.2;
       letter-spacing: -0.02em;
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-sub {
-      font-size: clamp(1.1rem, 2.5vw, 1.45rem);
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1.35;
     }
 
     .divider {
@@ -102,12 +93,12 @@
       box-shadow: 0 0 60px rgba(13, 153, 255, 0.15);
     }
 
-    /* ── Checklist ── */
-    .checklist-section {
+    /* ── Steps ── */
+    .steps-section {
       padding: 1rem 0 2rem;
     }
 
-    .checklist-title {
+    .steps-title {
       text-align: center;
       font-size: 1.2rem;
       font-weight: 700;
@@ -115,7 +106,7 @@
       color: var(--subtle);
     }
 
-    .checklist {
+    .steps {
       list-style: none;
       display: flex;
       flex-direction: column;
@@ -124,10 +115,10 @@
       margin: 0 auto;
     }
 
-    .checklist li {
+    .steps li {
       display: flex;
       align-items: flex-start;
-      gap: 1rem;
+      gap: 1.1rem;
       font-size: 1.05rem;
       font-weight: 500;
       color: var(--text);
@@ -137,24 +128,31 @@
       padding: 1rem 1.2rem;
     }
 
-    .check-icon {
+    .step-num {
       flex-shrink: 0;
-      width: 26px;
-      height: 26px;
+      width: 28px;
+      height: 28px;
       border-radius: 50%;
       background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 900;
+      color: #000;
       margin-top: 1px;
     }
 
-    .check-icon svg {
-      width: 14px;
-      height: 14px;
-      stroke: #000;
-      stroke-width: 2.5;
-      fill: none;
+    .step-text strong {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 0.15rem;
+    }
+
+    .step-text span {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-weight: 400;
     }
 
     /* ── Footer ── */
@@ -184,8 +182,10 @@
 
     <!-- Hero headline -->
     <div class="hero">
-      <span class="congrats-word"><span class="g">Congratulations,</span></span>
-      <p class="hero-sub">your call is booked. Here is your checklist<br />to confirm your call.</p>
+      <h1 class="hero-headline">
+        Your application has been submitted.<br />
+        <span class="g">Here's what happens next.</span>
+      </h1>
       <hr class="divider" />
     </div>
 
@@ -199,41 +199,32 @@
       </div>
     </div>
 
-    <!-- Checklist -->
-    <div class="checklist-section">
-      <p class="checklist-title">Complete these steps to confirm your call:</p>
-      <ul class="checklist">
+    <!-- Next steps -->
+    <div class="steps-section">
+      <p class="steps-title">What happens next:</p>
+      <ol class="steps">
         <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Check your email for a calendar confirmation
+          <span class="step-num">1</span>
+          <div class="step-text">
+            <strong>Application Review</strong>
+            <span>Our team will review your application within 24 hours.</span>
+          </div>
         </li>
         <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Add the call to your calendar right now
+          <span class="step-num">2</span>
+          <div class="step-text">
+            <strong>We'll Reach Out</strong>
+            <span>If you're a great fit, you'll receive a call or email to schedule your free strategy session.</span>
+          </div>
         </li>
         <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Show up 5 minutes early with a pen and paper
+          <span class="step-num">3</span>
+          <div class="step-text">
+            <strong>Show Up Ready</strong>
+            <span>Come to your strategy session ready to discuss your business goals and where you want to go.</span>
+          </div>
         </li>
-        <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Be in a quiet place with no distractions
-        </li>
-        <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Be ready to make a decision on the call
-        </li>
-      </ul>
+      </ol>
     </div>
 
   </div>
