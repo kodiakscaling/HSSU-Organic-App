@@ -59,7 +59,7 @@
       text-transform: uppercase;
     }
 
-    /* ── Hero headline ── */
+    /* ── Hero ── */
     .hero {
       text-align: center;
       padding: 2.5rem 0 2rem;
@@ -93,9 +93,7 @@
     }
 
     /* ── Video ── */
-    .video-section {
-      padding: 2.2rem 0;
-    }
+    .video-section { padding: 2.2rem 0; }
 
     .video-wrapper {
       border-radius: 10px;
@@ -103,59 +101,178 @@
       box-shadow: 0 0 60px rgba(13, 153, 255, 0.15);
     }
 
-    /* ── Checklist ── */
-    .checklist-section {
-      padding: 1rem 0 2rem;
-    }
+    /* ── Steps ── */
+    .steps-section { padding: 1rem 0 2.5rem; }
 
-    .checklist-title {
+    .steps-title {
       text-align: center;
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-      color: var(--subtle);
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
     }
 
-    .checklist {
+    .steps-subtitle {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .steps {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      max-width: 580px;
+      max-width: 640px;
       margin: 0 auto;
     }
 
-    .checklist li {
+    .steps li {
       display: flex;
       align-items: flex-start;
-      gap: 1rem;
-      font-size: 1.05rem;
-      font-weight: 500;
-      color: var(--text);
-      background: #0d0d0d;
-      border: 1px solid #1f1f1f;
-      border-radius: 10px;
-      padding: 1rem 1.2rem;
+      gap: 1.1rem;
+      background: rgba(13, 153, 255, 0.06);
+      border: 1px solid rgba(13, 153, 255, 0.15);
+      border-radius: 12px;
+      padding: 1.2rem 1.4rem;
     }
 
-    .check-icon {
+    .step-num {
       flex-shrink: 0;
-      width: 26px;
-      height: 26px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 1px;
+      font-size: 0.75rem;
+      font-weight: 900;
+      color: #000;
+      margin-top: 2px;
     }
 
-    .check-icon svg {
-      width: 14px;
-      height: 14px;
-      stroke: #000;
-      stroke-width: 2.5;
-      fill: none;
+    .step-text strong {
+      display: block;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+
+    .step-text span {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    /* ── YouTube videos ── */
+    .yt-section {
+      max-width: 640px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .yt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .yt-item h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .yt-embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .yt-embed iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* ── Reminder ── */
+    .reminder {
+      max-width: 640px;
+      margin: 0 auto 3rem;
+      background: rgba(13, 153, 255, 0.08);
+      border: 1px solid rgba(13, 153, 255, 0.25);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      text-align: center;
+    }
+
+    .reminder p {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--subtle);
+    }
+
+    /* ── Section title ── */
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Video testimonials ── */
+    .testimonials-section { margin-bottom: 3rem; }
+
+    .vid-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .testimonial-vid-card {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(13, 153, 255, 0.2);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .wistia-portrait-wrapper {
+      position: relative;
+      padding-bottom: 177.78%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .wistia-portrait-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* ── Screenshots ── */
+    .screenshots-section { margin-bottom: 3rem; }
+
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+    }
+
+    .screenshot-grid img {
+      border-radius: 8px;
+      width: 100%;
+      display: block;
     }
 
     /* ── Footer ── */
@@ -219,41 +336,134 @@
       </div>
     </div>
 
-    <!-- Checklist -->
-    <div class="checklist-section">
-      <p class="checklist-title">Complete these steps to confirm your call:</p>
-      <ul class="checklist">
+    <!-- 4 Action Steps -->
+    <div class="steps-section">
+      <h2 class="steps-title">Complete These 4 Steps To Confirm Your Call</h2>
+      <p class="steps-subtitle">Your spot is only held once these are done.</p>
+      <ol class="steps">
         <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Check your email for a calendar confirmation
+          <span class="step-num">01</span>
+          <div class="step-text">
+            <strong>Open Your Email &amp; Accept The Invite</strong>
+            <span>You should have a calendar invite waiting in your inbox. Find it and hit accept.</span>
+          </div>
         </li>
         <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Add the call to your calendar right now
+          <span class="step-num">02</span>
+          <div class="step-text">
+            <strong>Add It To Your Calendar</strong>
+            <span>Make sure the call is saved with the correct date and time. Double check the timezone.</span>
+          </div>
         </li>
         <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Show up 5 minutes early with a pen and paper
+          <span class="step-num">03</span>
+          <div class="step-text">
+            <strong>Set A Reminder</strong>
+            <span>Set an alarm for 30 minutes before your call. Phone alarm, sticky note — whatever works. Don't be late.</span>
+          </div>
         </li>
         <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Be in a quiet place with no distractions
+          <span class="step-num">04</span>
+          <div class="step-text">
+            <strong>Watch My Full Story</strong>
+            <span>While you wait, watch the video linked below. It's how I went from $9.25/hr to $100K+ months. The more context you have going in, the better our call will be.</span>
+          </div>
         </li>
-        <li>
-          <span class="check-icon">
-            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
-          </span>
-          Be ready to make a decision on the call
-        </li>
-      </ul>
+      </ol>
+    </div>
+
+    <!-- YouTube Videos -->
+    <div class="yt-section">
+      <div class="yt-grid">
+        <div class="yt-item">
+          <h3>Watch My Full Story</h3>
+          <div class="yt-embed">
+            <iframe src="https://www.youtube.com/embed/7VRWe2dEHR8?si=R4eIQA8TLvco9awF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="yt-item">
+          <h3>Buying My First Lamborghini</h3>
+          <div class="yt-embed">
+            <iframe src="https://www.youtube.com/embed/oRMy7iaz46A?si=eksi8auCSJAeMRnP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reminder -->
+    <div class="reminder">
+      <p>Show up ready. This call is your opportunity — don't waste it. I'll see you there.</p>
+    </div>
+
+    <!-- Video Testimonials -->
+    <div class="testimonials-section">
+      <h2 class="section-title">Real Results From <span class="g">Real Students</span></h2>
+      <div class="vid-grid">
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/wrr5v6f5ok?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/169e4zkqxb?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/gsl23n5w9r?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/brj3jb9stw?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/t3sq3gsuvi?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screenshot Grid -->
+    <div class="screenshots-section">
+      <div class="screenshot-grid">
+        <img src="/testimonials/screenshots/IMG_0621.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0622.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0623.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0624.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0625.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0626.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0627.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0628.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0629.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0630.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0631.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0632.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0633.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0634.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0635.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0636.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0637.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0638.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0639.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0640.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0641.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0642.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0643.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0644.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0645.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0646.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0647.PNG" alt="Student result" loading="lazy" />
+        <img src="/testimonials/screenshots/IMG_0648.PNG" alt="Student result" loading="lazy" />
+      </div>
     </div>
 
   </div>
