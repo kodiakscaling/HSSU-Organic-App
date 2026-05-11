@@ -307,6 +307,8 @@
       .testimonials-section { margin-bottom: 2.5rem; }
       .screenshots-section { margin-bottom: 2rem; }
       .screenshot-grid { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
+      .vid-grid { grid-template-columns: 1fr; }
+      .testimonials-vid-section { margin-bottom: 2rem; }
       .yt-grid { grid-template-columns: 1fr; }
       .yt-section { margin-bottom: 2.5rem; }
       .bridge { padding: 1.4rem 0 1rem; }
@@ -360,6 +362,36 @@
       border-radius: 8px;
       width: 100%;
       display: block;
+    }
+
+    /* ── Video testimonials ── */
+    .testimonials-vid-section { margin-bottom: 3rem; }
+
+    .vid-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .testimonial-vid-card {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(13, 153, 255, 0.2);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .wistia-portrait-wrapper {
+      position: relative;
+      padding-bottom: 177.78%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .wistia-portrait-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
     }
   </style>
 </head>
@@ -492,6 +524,44 @@
       </div>
     </div>
 
+
+
+    <!-- Video Testimonials -->
+    <div class="testimonials-vid-section">
+      <h2 class="section-title">Real Results From <span class="g">Real Students</span></h2>
+      <div class="vid-grid">
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/wrr5v6f5ok?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/169e4zkqxb?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/gsl23n5w9r?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/brj3jb9stw?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="testimonial-vid-card">
+          <div class="wistia-portrait-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/t3sq3gsuvi?autoPlay=false&controlsVisibleOnLoad=true&fullscreenButton=true&playbar=true&volumeControl=true&seo=false&videoFoam=true"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Screenshot Grid -->
     <div class="screenshots-section">
