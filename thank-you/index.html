@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call Confirmed — Home Service Scaling University</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue-start: #0d99ff;
+      --blue-end: #73ffff;
+      --bg: #000000;
+      --text: #ffffff;
+      --muted: #aaaaaa;
+      --subtle: #cccccc;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .g {
+      background: linear-gradient(to right, var(--blue-start), var(--blue-end));
+      background-size: 100vw 100%;
+      background-attachment: fixed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ── Brand bar ── */
+    .brand-bar {
+      padding: 2.5rem 0 0;
+      text-align: center;
+    }
+
+    .brand-name {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    /* ── Hero headline ── */
+    .hero {
+      text-align: center;
+      padding: 2.5rem 0 2rem;
+    }
+
+    .congrats-word {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-sub {
+      font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, var(--blue-start), var(--blue-end));
+      background-size: 100vw 100%;
+      background-attachment: fixed;
+      border: none;
+      border-radius: 2px;
+      margin: 1.8rem auto 0;
+    }
+
+    /* ── Video ── */
+    .video-section {
+      padding: 2.2rem 0;
+    }
+
+    .video-wrapper {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(13, 153, 255, 0.15);
+    }
+
+    /* ── Checklist ── */
+    .checklist-section {
+      padding: 1rem 0 2rem;
+    }
+
+    .checklist-title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--subtle);
+    }
+
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--text);
+      background: #0d0d0d;
+      border: 1px solid #1f1f1f;
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+    }
+
+    .check-icon {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+
+    .check-icon svg {
+      width: 14px;
+      height: 14px;
+      stroke: #000;
+      stroke-width: 2.5;
+      fill: none;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2.5rem 0;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid #1a1a1a;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .brand-bar { padding-top: 1.8rem; }
+      .hero { padding: 2rem 0 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Brand bar -->
+    <div class="brand-bar">
+      <p class="brand-name"><span class="g">Home Service Scaling University</span></p>
+    </div>
+
+    <!-- Hero headline -->
+    <div class="hero">
+      <span class="congrats-word"><span class="g">Congratulations,</span></span>
+      <p class="hero-sub">your call is booked. Here is your checklist<br />to confirm your call.</p>
+      <hr class="divider" />
+    </div>
+
+    <!-- Confirmation video -->
+    <div class="video-section">
+      <div class="video-wrapper">
+        <script src="https://fast.wistia.com/player.js" async></script>
+        <script src="https://fast.wistia.com/embed/y9z2cmy2ci.js" async type="module"></script>
+        <style>wistia-player[media-id='y9z2cmy2ci']:not(:defined){background:center/contain no-repeat url('https://fast.wistia.com/embed/medias/y9z2cmy2ci/swatch');display:block;filter:blur(5px);padding-top:56.25%;}</style>
+        <wistia-player media-id="y9z2cmy2ci" aspect="1.7777777777777777"></wistia-player>
+      </div>
+    </div>
+
+    <!-- Checklist -->
+    <div class="checklist-section">
+      <p class="checklist-title">Complete these steps to confirm your call:</p>
+      <ul class="checklist">
+        <li>
+          <span class="check-icon">
+            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
+          </span>
+          Check your email for a calendar confirmation
+        </li>
+        <li>
+          <span class="check-icon">
+            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
+          </span>
+          Add the call to your calendar right now
+        </li>
+        <li>
+          <span class="check-icon">
+            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
+          </span>
+          Show up 5 minutes early with a pen and paper
+        </li>
+        <li>
+          <span class="check-icon">
+            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
+          </span>
+          Be in a quiet place with no distractions
+        </li>
+        <li>
+          <span class="check-icon">
+            <svg viewBox="0 0 14 14"><polyline points="2 7 6 11 12 3"/></svg>
+          </span>
+          Be ready to make a decision on the call
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Home Service Scaling University. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
