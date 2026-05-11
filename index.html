@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Application Submitted — Home Service Scaling University</title>
+  <title>Home Service Scaling University</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -29,6 +29,7 @@
       min-height: 100vh;
     }
 
+    /* Gradient that spans the full viewport width */
     .g {
       background: linear-gradient(to right, var(--blue-start), var(--blue-end));
       background-size: 100vw 100%;
@@ -58,17 +59,32 @@
       text-transform: uppercase;
     }
 
-    /* ── Hero ── */
-    .hero {
+    .brand-name .g {
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+    }
+
+    /* ── Headline block ── */
+    .headline-block {
       text-align: center;
       padding: 2.5rem 0 2rem;
     }
 
-    .hero-headline {
-      font-size: clamp(1.8rem, 4.5vw, 3rem);
+    .subheadline {
+      font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 900;
-      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 1.1rem;
+      line-height: 1.15;
       letter-spacing: -0.02em;
+    }
+
+    .main-headline {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      font-weight: 500;
+      line-height: 1.55;
+      color: var(--subtle);
     }
 
     .divider {
@@ -82,9 +98,9 @@
       margin: 1.8rem auto 0;
     }
 
-    /* ── Video ── */
+    /* ── Video section ── */
     .video-section {
-      padding: 2.2rem 0;
+      padding: 2rem 0;
     }
 
     .video-wrapper {
@@ -93,66 +109,33 @@
       box-shadow: 0 0 60px rgba(13, 153, 255, 0.15);
     }
 
-    /* ── Steps ── */
-    .steps-section {
-      padding: 1rem 0 2rem;
+    /* ── Bridge text ── */
+    .bridge {
+      text-align: center;
+      padding: 2.2rem 0 1.6rem;
     }
 
-    .steps-title {
+    .bridge p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .bridge strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    /* ── Form section ── */
+    .form-section {
+      padding: 0 0 1.5rem;
+    }
+
+    .form-label {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: 700;
       margin-bottom: 1.5rem;
-      color: var(--subtle);
-    }
-
-    .steps {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 580px;
-      margin: 0 auto;
-    }
-
-    .steps li {
-      display: flex;
-      align-items: flex-start;
-      gap: 1.1rem;
-      font-size: 1.05rem;
-      font-weight: 500;
-      color: var(--text);
-      background: #0d0d0d;
-      border: 1px solid #1f1f1f;
-      border-radius: 10px;
-      padding: 1rem 1.2rem;
-    }
-
-    .step-num {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--blue-start), var(--blue-end));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8rem;
-      font-weight: 900;
-      color: #000;
-      margin-top: 1px;
-    }
-
-    .step-text strong {
-      display: block;
-      font-weight: 700;
-      margin-bottom: 0.15rem;
-    }
-
-    .step-text span {
-      font-size: 0.9rem;
-      color: var(--muted);
-      font-weight: 400;
     }
 
     /* ── Footer ── */
@@ -167,7 +150,7 @@
 
     @media (max-width: 600px) {
       .brand-bar { padding-top: 1.8rem; }
-      .hero { padding: 2rem 0 1.5rem; }
+      .headline-block { padding: 2rem 0 1.5rem; }
     }
   </style>
 </head>
@@ -180,51 +163,36 @@
       <p class="brand-name"><span class="g">Home Service Scaling University</span></p>
     </div>
 
-    <!-- Hero headline -->
-    <div class="hero">
-      <h1 class="hero-headline">
-        Your application has been submitted.<br />
-        <span class="g">Here's what happens next.</span>
+    <!-- Headline block -->
+    <div class="headline-block">
+      <p class="subheadline">
+        Build A Team That Will Allow You To Scale To <span class="g">Five To Six Figures Per Month</span><br class="hide-mobile" /> With Your Home Service Business
+      </p>
+      <h1 class="main-headline">
+        Stop Being the <span class="g">Bottleneck</span><br />in Your Own Business
       </h1>
-      <hr class="divider" />
     </div>
 
-    <!-- Confirmation video -->
+    <!-- VSL video -->
     <div class="video-section">
       <div class="video-wrapper">
         <script src="https://fast.wistia.com/player.js" async></script>
-        <script src="https://fast.wistia.com/embed/y9z2cmy2ci.js" async type="module"></script>
-        <style>wistia-player[media-id='y9z2cmy2ci']:not(:defined){background:center/contain no-repeat url('https://fast.wistia.com/embed/medias/y9z2cmy2ci/swatch');display:block;filter:blur(5px);padding-top:56.25%;}</style>
-        <wistia-player media-id="y9z2cmy2ci" aspect="1.7777777777777777"></wistia-player>
+        <script src="https://fast.wistia.com/embed/vtkvpoengl.js" async type="module"></script>
+        <style>wistia-player[media-id='vtkvpoengl']:not(:defined){background:center/contain no-repeat url('https://fast.wistia.com/embed/medias/vtkvpoengl/swatch');display:block;filter:blur(5px);padding-top:56.25%;}</style>
+        <wistia-player media-id="vtkvpoengl" aspect="1.7777777777777777"></wistia-player>
       </div>
     </div>
 
-    <!-- Next steps -->
-    <div class="steps-section">
-      <p class="steps-title">What happens next:</p>
-      <ol class="steps">
-        <li>
-          <span class="step-num">1</span>
-          <div class="step-text">
-            <strong>Application Review</strong>
-            <span>Our team will review your application within 24 hours.</span>
-          </div>
-        </li>
-        <li>
-          <span class="step-num">2</span>
-          <div class="step-text">
-            <strong>We'll Reach Out</strong>
-            <span>If you're a great fit, you'll receive a call or email to schedule your free strategy session.</span>
-          </div>
-        </li>
-        <li>
-          <span class="step-num">3</span>
-          <div class="step-text">
-            <strong>Show Up Ready</strong>
-            <span>Come to your strategy session ready to discuss your business goals and where you want to go.</span>
-          </div>
-        </li>
-      </ol>
+    <!-- Bridge text -->
+    <div class="bridge">
+      <p><strong>Watch the full video above</strong>, then fill out the application below to apply for a free strategy call.</p>
+    </div>
+
+    <!-- Typeform -->
+    <div class="form-section">
+      <p class="form-label">Apply Now — <span class="g">Spots Are Limited</span></p>
+      <div data-tf-live="01KRA23KFXM5CFQKCGJH8X8F44" style="min-height: 500px; width: 100%;"></div>
+      <script src="https://embed.typeform.com/next/embed.js"></script>
     </div>
 
   </div>
