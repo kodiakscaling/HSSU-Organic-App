@@ -305,9 +305,44 @@
       .features-section { margin-bottom: 2.5rem; }
       .testimonials-grid { grid-template-columns: 1fr; }
       .testimonials-section { margin-bottom: 2.5rem; }
+      .yt-grid { grid-template-columns: 1fr; }
+      .yt-section { margin-bottom: 2.5rem; }
       .bridge { padding: 1.4rem 0 1rem; }
       .bridge p { font-size: 0.95rem; }
       .form-label { font-size: 1.1rem; }
+    }
+
+    /* ── YouTube videos ── */
+    .yt-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .yt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .yt-item h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .yt-embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .yt-embed iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
     }
   </style>
 </head>
@@ -416,6 +451,26 @@
           <div class="testimonial-name">Raphael</div>
           <div class="testimonial-result"><span class="g">$65K/Month Business</span></div>
           <div class="testimonial-quote">Came in barely scraping by. Now runs a full team with multiple trucks.</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- YouTube Videos -->
+    <div class="yt-section">
+      <h2 class="section-title">Watch My <span class="g">Story</span></h2>
+      <div class="yt-grid">
+        <div class="yt-item">
+          <h3>My Full Story</h3>
+          <div class="yt-embed">
+            <iframe src="https://www.youtube.com/embed/7VRWe2dEHR8?si=R4eIQA8TLvco9awF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="yt-item">
+          <h3>Buying My First Lamborghini</h3>
+          <div class="yt-embed">
+            <iframe src="https://www.youtube.com/embed/oRMy7iaz46A?si=eksi8auCSJAeMRnP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
